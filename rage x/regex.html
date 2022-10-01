@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regex.css">
+    <link rel="shortcut icon" href="my logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>REGE X</title>
+</head>
+<body class="bg-gradient-to-r from-emerald-200 to-fuchsia-300">
+    <div class="head flex flex-col sm:flex-row justify-center items-center pt-2">
+        <img src="rage img.png" class="logo h-28 w-32 sm:h-28 sm:w-28  sm:mr-6">  
+        <div class="txt flex  items-center">  
+        <h1 class=" text-2xl sm:text-2xl  lg:text-3xl font-bold mt-4 lg:mt-0 flex  text-center"> Introduction to RAGE X</h1>
+    </div>
+</div>
+    <div class="it flex flex-col justify-center items-center my-6">
+    <div class="content2 flex flex-col border-2 rounded-2xl lg:h-85 w-4/6  border-black  bg-neutral-200 my-8 py-4">
+    <h2 class="ml-4 lg:ml-12 mt-1 font-bold">What is REGEX?</h2>
+    <p class="ml-6 lg:ml-20">1) Short for regular expression, a regex is a string of text that lets you create patterns that help match, locate, and manage text. <br>
+        2) Perl is a great example of a programming language that utilizes regular expressions. <br>
+        3) Database management system (DBMS) utilises queries to pull out information from the database. <br>
+        4) However, its only one of the many places you can find regular expressions. Regular expressions can also be used from the command line and in text editors to find text within a file. <br>
+        5) Regular expressions are useful in search and replace operations. <br>
+        6) The typical use case is to look for a sub-string that matches a pattern and replace it with something else. Most APIs using regular expressions allow you to reference capture groups from the search pattern in the replacement string.
+    </p>
+    </div>
+    <div class="content3 flex-col justify-centre text-centre  border-2 rounded-2xl   lg:h-85 w-4/6  border-black  bg-neutral-200  my-6 py-4 ">
+        <h2 class="ml-4 lg:ml-12 mt-1 font-bold">How to write regular expression?</h2>
+        <p class=" ml-6 lg:ml-20">1) Repeaters : * , + and { }: <li class=" ml-6 lg:ml-20">These symbols act as repeaters and tell the computer that the preceding character is to be used for more than just one time.</li> </p> <br>
+        <p class=" ml-6 lg:ml-20">2) The asterisk symbol ( * ): <li class=" ml-6 lg:ml-20">It tells the computer to match the preceding character (or set of characters) for 0 or more times (upto infinite).</li> </p> <br>
+        <p class=" ml-6 lg:ml-20">3) The Plus symbol ( + ): <li class=" ml-6 lg:ml-20">It tells the computer to repeat the preceding character (or set of characters) for atleast one or more times(upto infinite).</li> </p> <br>
+        <p class=" ml-6 lg:ml-20">4) The curly braces {…}: <li class=" ml-6 lg:ml-20">It tells the computer to repeat the preceding character (or set of characters) for as many times as the value inside this bracket.</li> </p> <br>
+        <p class=" ml-6 lg:ml-20">5) Wildcard - ( . ): <li class=" ml-6 lg:ml-20">The dot symbol can take place of any other symbol, that is why it is called the wildcard character.</li> </p> <br>
+        <p class=" ml-6 lg:ml-20">6) Optional character - ( ? ): <li class=" ml-6 lg:ml-20">This symbol tells the computer that the preceding character may or may not be present in the string to be matched.</li> </p> <br>
+        <p class=" ml-6 lg:ml-20">7) The caret ( ^ ) symbol: <li class=" ml-6 lg:ml-20">Setting position for match :tells the computer that the match must start at the beginning of the string or line.</li> </p> <br>
+        <p class=" ml-6 lg:ml-20">8) The dollar ( $ ) symbol: <li class=" ml-6 lg:ml-20">It tells the computer that the match must occur at the end of the string or before \n at the end of the line or string.</li> </p> <br>
+    </div>
+    <div class="content2 flex flex-col border-2 rounded-2xl lg:h-85 w-4/6  border-black  bg-neutral-200 my-8 py-4">
+        <h2 class="ml-4 lg:ml-12 mt-1 font-bold">Components of REGEX :</h2>
+        <p class="ml-6 lg:ml-20"><b>1) A character class : </b> matches any one of a set of characters. It is used to match the most basic element of a language like a letter, a digit, space, a symbol etc. <br>
+            /s : matches any whitespace characters such as space and tab <br>
+            /S : matches any non-whitespace characters <br>
+            /d : matches any digit character <br>
+            /D : matches any non-digit characters <br>
+            /w : matches any word character (basically alpha-numeric) <br>
+            /W : matches any non-word character <br>
+            /b : matches any word boundary (this would include spaces, dashes, commas, semi-colons, etc)
+            <li class="ml-12 mt-3">The Escape Symbol : \ <br>
+                If you want to match for the actual '+', '.' etc characters, add a backslash( \ ) before that character. This will tell the computer to treat the following character as a search character and consider it for matching pattern.
+            </li>
+            <li class="ml-12 mt-3">Grouping Characters ( ) <br>
+                A set of different symbols of a regular expression can be grouped together to act as a single unit and behave as a block, for this, you need to wrap the regular expression in the parenthesis( ).
+            </li>
+            <li class="ml-12 mt-3">Vertical Bar ( | ) : <br>
+                Matches any one element separated by the vertical bar (|) character.
+            </li>
+            <li class="ml-12 mt-3">\number : <br>
+                Backreference: allows a previously matched sub-expression   (expression captured or enclosed within circular brackets ) to be identified subsequently in the same regular expression. \n means that group enclosed within the n-th bracket will be repeated at current position.
+            </li>
+            <li class="ml-12 mt-3">Comment : (?# comment) - <br>
+                Inline comment: The comment ends at the first closing parenthesis.
+            </li>
+        <b class="ml-6 lg:ml-20">2) Groups </b>
+        <b class="ml-6 lg:ml-20">3) Quantifiers </b>
+        <b class="ml-6 lg:ml-20">4) Backreferences </b>
+        <b class="ml-6 lg:ml-20">5) Anchors, Boundaries, Delimiters </b>
+        <b class="ml-6 lg:ml-20">6) Lookarounds </b>
+        <b class="ml-6 lg:ml-20">7) Modifiers </b>
+        </p>
+    </div>
+    <div class="content5 flex-col justify-centre text-centre  border-2 rounded-2xl   lg:h-85 w-4/6  border-black  bg-neutral-200  my-6 py-4">
+    <h2 class="ml-4 lg:ml-12 mt-1 font-bold">Performance Pitfalls :</h2>
+    <li class="ml-12 mt-3">You should know some things about how your regex engine works since two "equivalent" regexes can have drastic differences in processing speed. <br>
+        ◉ It is possible to write regexes that take exponential time to match, but you pretty much have to TRY to make one (they're pathological) <br>
+        ◉ It is more common to accidentally create regexes that run in quadratic time
+    </li>
+    <li class="ml-12 mt-1">Main types of problems <br>
+        ◉ Recompilation (from forgetting to compile regexes used multiple times) <br>
+        ◉ Dot-star in the Middle (which causes backtracking) <br>
+                   -Solution 1: Use negated character class <br>
+                   -Solution 2: Use reluctant quantifiers <br>
+        ◉ Nested Repetition
+    </li>
+    </p>
+    </div>
+    <div class="content6 flex-col justify-centre text-centre  border-2 rounded-2xl  lg:h-85 w-4/6 border-black  bg-neutral-200  my-6 py-4">
+    <h2 class=" ml-4 lg:ml-12 mt-1 font-bold">Performance Tips :</h2>
+    <li class="ml-12 mt-3">Use non-capturing groups when you need parentheses but not capture.</li>
+    <li class="ml-12 mt-1">If the regex is very complex, do a quick spot-check before attempting a match, e.g. <br>
+        ◉ Does an email address contain '@'?
+    </li>
+    <li class="ml-12 mt-1">Present the most likely alternative first, e.g. <br>
+        ◉ black| white|blue| red|green| metallic seaweed
+    </li>
+    <li class="ml-12 mt-1">Reduce the amount of looping the engine has to do <br> 
+        ◉ \d\d\d\d\d is faster than \d{5}
+        ◉ aaaa+ is faster than a{4,}
+    </li>
+    <li class="ml-12 mt-1">Avoid obvious backtrack e.g. <br>
+        ◉ Mr|Ms| Mrs should be M(?:rs?|s)
+        ◉ Good morning |Good evening should be Good (?:morning| evening)
+    </li>
+    </div>
+    <div class="content7 flex-col justify-centre text-centre  border-2 rounded-2xl  lg:h-85 w-4/6 border-black  bg-neutral-200  my-6 py-4">
+        <h2 class=" ml-4 lg:ml-12 mt-1 font-bold">Miscellaneous Language-Specific Notes -</h2>
+        <ul>
+            <li class="ml-12 mt-3"> • Java's built-in support for regexes exceeds that of many languages <br>
+                The overhead costs of using a DBMS are due to the following:
+                <br>
+                •  Especially good for Unicode and for character classes (has more than Perl)
+                <br>
+                • Syntax is more cumbersome (string literal support weak, no operator for matching...) — live with it!
+                <br>
+                • Perl has nice regex, too, even allows you can even embed code inside them.
+                <br>
+                Great Perl document at the perldoc pages perlrequick, perlretut, perlre. and perlreref.
+                <br>
+                • JavaScript seems to less extensive support than other languages, but I think this is changing.
+                <br>
+                • Python puts regex functions in a module.
+            </li>
+        </ul>
+    </div>
+    <div class="content9 mt-4 flex justify-center items-center text-center w-64 sm:w-96">
+        <button type="button" class="my-14 py-2"><span></span><a href="htmlnotes.pdf">CLICK HERE TO DOWNLOAD THE
+                PDF</a></button>
+    </div>

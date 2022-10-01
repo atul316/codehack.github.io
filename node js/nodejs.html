@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nodejs.css">
+    <link rel="shortcut icon" href="my logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>NODE JS</title>
+</head>
+
+<body class="bg-gradient-to-r from-green-100 to-sky-200">
+    <div class="head flex flex-col sm:flex-row justify-center items-center pt-6">
+        <img src="node js img.png" class="logo h-20 w-20 sm:h-28 sm:w-28  sm:mr-6">  
+        <div class="txt flex  items-center">  
+        <h1 class=" text-2xl sm:text-2xl  lg:text-3xl font-bold mt-4 lg:mt-0 flex  text-center"> Introduction to NODE JS </h1>
+    </div>
+</div>
+    <div class="it flex flex-col justify-center items-center my-10">
+        <div class="content2 flex flex-col border-2 rounded-2xl lg:h-58 w-4/6  border-black  bg-neutral-200  py-2">
+            <h2 class="ml-4 lg:ml-12 mt-1 font-bold">What is Node Js?</h2>
+            <p class="ml-6 lg:ml-20">1) Sends the task to the computer's file system. <br>
+                2) Waits while the file system opens and reads the file.<br>
+                3)Returns the content to the client. <br>
+                4)Ready to handle the next request.<br>
+            </p>
+        </div>
+        <div class="it flex flex-col justify-center items-center ">
+            <div class="content2 flex flex-col border-2 rounded-2xl xl:h-68 w-4/6  border-black  bg-neutral-200 my-8 py-4">
+                <h2 class="ml-4 lg:ml-12 mt-1 font-bold">Why learn NODEjs?</h2>
+                <p class="ml-6 lg:ml-20">1) Node.js can create, open, read, write, delete, and close files on the server<br>
+                    2)Node.js can generate dynamic page content.<br>
+                    3) Node.js can collect form data<br>
+                    4) Node.js can add, delete, modify data in your database<br>
+                    5) IT is  fun and easy to learn!<br>
+                    6)Node.js files contain tasks that will be executed on certain events.<br>
+                </p>
+            </div>
+            <div class="it flex flex-col justify-center items-center my">
+                <div class="content2 flex flex-col border-2 rounded-2xl lg:h-30 w-4/6  border-black  bg-neutral-200 my-2 py-4">
+                    <h2 class="ml-4 lg:ml-12 mt-1 font-bold">Node.js Get Started
+                        :</h2>
+                    <p class="ml-6 lg:ml-20">Node.js files must be initiated in the "Command Line Interface" program of your computer.
+
+                        How to open the command line interface on your computer depends on the operating system. For Windows users, press the start button and look for "Command Prompt", or simply write "cmd" in the search field.
+                        
+                        Navigate to the folder that contains the file "myfirst.js", the command line interface window should look something like this:<br>
+                    </p>
+                </div>
+            <div
+                class="content2 flex flex-col border-2 rounded-2xl lg:h-59 w-4/6  border-black  bg-neutral-200 my-8 py-4 ">
+                <h2 class="ml-4 lg:ml-12 mt-1 font-bold">Quickstart for NODE js :</h2>
+                <p class=" ml-6 lg:ml-20">Use the module "myfirstmodule" in a Node.js file:
+
+                    var http = require('http');
+                    var dt = require('./ myfirst module');
+                    
+                    http.createServer (function  (req, res) {
+                      res.writeHead(200, {'Content-Type': 'text/html'});
+                      res.write("The date and time are currently: " + dt.myDateTime());
+                      res.end();
+                    }).listen(8080);
+                    NPM is a package manager for Node.js packages, or modules if you like.
+
+www.npmjs.com hosts thousands of free packages to download and use.
+
+The NPM program is installed on your computer when you install Node.js
+                </p>
+            </div>
+            <div
+                class="content5 flex-col justify-centre text-centre  border-2 rounded-2xl   lg:h-90 w-4/6  border-black  bg-neutral-200  my-3 py-4">
+                <h2 class="ml-4 lg:ml-12 mt-1 font-bold">Download a Package:</h2>
+                <li class="ml-12 mt-3">Downloading a package is very easy.
+
+                    Open the command line interface and tell NPM to download the package you want.</li>
+                <li class="ml-12 mt-1"> Once the package is installed, it is ready to use.
+
+                    Include the "upper-case" package the same way you include any other module.</li>
+                <li class="ml-12 mt-1">it has many advantages when it involves programming, All the program stand-alone files must use the foremost function to allow the program to start out up and motivate its functions.</li>
+                <li class="ml-12 mt-1">it can support unions and structures that are a mix of stand-alone and put-together files, It uses the standard C++ application mentioned as  uses the reserved library word mentioned as “goto” that’s the same as Java’s continue, or break commands.</li>
+                </p>
+            </div>
+            <div
+                class="content6 flex-col justify-centre text-centre  border-2 rounded-2xl  lg:h-90 w-4/6 border-black  bg-neutral-200  my-6 py-4">
+                <h2 class=" ml-4 lg:ml-12 mt-1 font-bold">Node.js File System Module:</h2>
+                <li class="ml-12 mt-3">The fs.readFile() method is used to read files on your computer.
+
+                    Assume we have the following HTML file (located in the same folder as Node.js):
+                    
+                    demofile1.html
+                    var http = require ('http');
+var fs = require ('fs');
+http. createServer (function  (req, res) {
+  fs.readFile ('demo file1 .html',  function (err, data) {
+    res. writeHead(200, {' Content- Type': 'text/ html'});
+    res. write(data);
+    return res.end();
+  });
+}).listen(8080);</li>
+                
+            </div>
+            <div
+                class="content8 flex-col justify-centre text-centre  border-2 rounded-2xl   lg:h-50 w-4/6 border-black  bg-neutral-200 my-6 py-4">
+                <h2 class=" ml-4 lg:ml-12 mt-1 font-bold">Node.js Events :</h2>
+                <li class="ml-12 mt-1">Node.js has a built-in module, called "Events", where you can create-, fire-, and listen for- your own events.
+
+                    To include the built-in Events module use the require() method. In addition, all event properties and methods are an instance of an EventEmitter object. To be able to access these properties and methods, create an EventEmitter object:</li>
+                <li class="ml-12 mt-3">You can assign event handlers to your own events with the EventEmitter object.</li>
+                    <li class="ml-12 mt-1">Learn about const correctness. Any method that doesn’t alter class state should be marked const, and any reference you’re not going to change should be const.</li>
+                    <li class="ml-12 mt-1">In the example below we have created a function that will be executed when a "scream" event is fired</li>
+            </div>
+        </div>
+        <div class="content9 mt-4 flex justify-center items-center text-center w-64 sm:w-96">
+            <button type="button" class="my-14 py-2"><span></span><a href="htmlnotes.pdf">CLICK HERE TO DOWNLOAD THE
+                    PDF</a></button>
+        </div>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="my logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DATABASE</title>
+</head>
+<body class="bg-gradient-to-r from-pink-200 to-teal-200">
+    <div class="head flex flex-col sm:flex-row justify-center items-center pt-6">
+        <img src="db img.png" class="logo h-20 w-40 sm:h-28 sm:w-44  sm:mr-">  
+        <div class="txt flex  items-center">  
+        <h1 class=" text-2xl sm:text-2xl  lg:text-3xl font-bold mt-4 lg:mt-0 flex  text-center"> Introduction to DataBase</h1>
+    </div>
+</div>
+    <div class="it flex flex-col justify-center items-center my-8">
+    <div class="content2 flex flex-col border-2 rounded-2xl lg:h-85 w-4/6  border-black  bg-neutral-200 my-8 py-4">
+    <h2 class="ml-4 lg:ml-12 mt-1 font-bold">What is DATABASE?</h2>
+    <p class="ml-6 lg:ml-20">1) A database is any collection of information that has been systematised for quick searching and retrieval via the use of a computer. <br>
+        2) Databases are intended to provide the means for the modification, deletion, storage, and retrieval of data in connection with different operations. <br>
+        3) Database management system (DBMS) utilises queries to pull out information from the database. <br>
+        4) A database can be saved either as a single file or as a group of files.  Different storage devices can hold a database.  The data in these files may be categorised into records, where each record contains fields. <br>
+        5) Database records and files must be systematised to permit data retrieval.  Queries are the primary method users make use of to retrieve information. <br>
+        6) The data in many databases contain natural-language texts of documents.
+    </p>
+    </div>
+    <div class="content3 flex-col justify-centre text-centre  border-2 rounded-2xl   lg:h-85 w-4/6  border-black  bg-neutral-200  my-6 py-4 ">
+        <h2 class="ml-4 lg:ml-12 mt-1 font-bold">Types of Databases :</h2>
+        <p class=" ml-6 lg:ml-20">1) Centralised database <li class=" ml-6 lg:ml-20">This database can be accessed by users from different locations. The central database saves data and programs and sends them to a central computing facility for processing.</li> </p> <br>
+        <p class=" ml-6 lg:ml-20">2) Operational database <li class=" ml-6 lg:ml-20">This is a basic form of database that contains information regarding the operations of an enterprise.  These databases are organised for marketing, production, and other business-related purposes.</li> </p> <br>
+        <p class=" ml-6 lg:ml-20">3) End-user database <li class=" ml-6 lg:ml-20">This is a database shared among users, and intended for use by end users, like managers of different departments.  This database presents a summary of the information involved for ease of use.</li> </p> <br>
+        <p class=" ml-6 lg:ml-20">4) Commercial database <li class=" ml-6 lg:ml-20">This is a database that holds information that external users need.  However, it's not cost efficient for the end users to maintain such a database by themselves.  Commercial databases are a paid service for the user, as the databases are subject specific.  Access is given through commercial links. Some commercial databases are offered on CD-ROMs, a method by which the cost of communication is reduced.</li> </p> <br>
+        <p class=" ml-6 lg:ml-20">5) Personal database <li class=" ml-6 lg:ml-20">Personal databases are maintained on personal computers.  They contain information meant for use by a limited number of users.</li> </p> <br>
+        <p class=" ml-6 lg:ml-20">6) Distributed database <li class=" ml-6 lg:ml-20">These databases make use of inputs from common databases.  The data involved is shared out between different sites in the organisation in question.  As the sites are connected to each other, the entire collection of data makes up the database of the organisation etc.</li> </p> <br>
+    </div>
+    <div class="content2 flex flex-col border-2 rounded-2xl lg:h-85 w-4/6  border-black  bg-neutral-200 my-8 py-4">
+        <h2 class="ml-4 lg:ml-12 mt-1 font-bold">What is DATABASE Engine?</h2>
+        <p class="ml-6 lg:ml-20">1) In a computer database, the database engine is the software that does the real work of sorting the information, finding specific data that you request, and so on. The term used to refer to a separate piece of software that ran on a central computer (in this case, it is more or less synonymous with the term “back-end”). Widely used database engines include Oracle, DB2, and Sybase. Separate front-end software running on your own computer lets you tell the database engine what to do (how to sort the data, what data to find), and displays the results of your commands. <br>
+            <br>
+            2) Database software like SQL(Standard Query Language): <br>
+            <li class=" ml-6 lg:ml-20">SQL(Standard Query Language) is a language for manipulating databases developed in the 70s by IBM. All data management systems use SQL to access data or to communicate with a data server. RDBMS is the core platform for SQL, and for all other modern database languages such as  Oracle, MS SQL Server, IBM DB2, MySQL, and Microsoft Access, PostgreSQL, SQLite, Firebird, and many more. SQL (Standard Query Language) is born as a result of the mathematical work of Codd, who founded the work of relational databases, three types of manipulations on the database: <br>
+                •  The maintenance of tables: create, delete, and modify the table structure. <br>
+                •  The manipulation of databases: Selecting, modifying, deleting records. <br>
+                •  The management of access rights to tables: Data control: access rights, commit the changes.</li>
+        </p>
+    </div>
+    <div class="content5 flex-col justify-centre text-centre  border-2 rounded-2xl   lg:h-85 w-4/6  border-black  bg-neutral-200  my-6 py-4">
+    <h2 class="ml-4 lg:ml-12 mt-1 font-bold">Advantages of DBMS :</h2>
+    <li class="ml-12 mt-3">Controlling Redundancy : In file system, each application has its own private files, which cannot be shared between multiple applications. 1:his can often lead to considerable redundancy in the stored data, which results in wastage of storage space. By having centralized database most of this can be avoided. It is not possible that all redundancy should be eliminated. Sometimes there are sound business and technical reasons for· maintaining multiple copies of the same data. In a database system, however this redundancy can be controlled.</li>
+    <li class="ml-12 mt-1">Integrity can be enforced : Integrity of data means that data in database is always accurate, such that incorrect information cannot be stored in database. In order to maintain the integrity of data, some integrity constraints are enforced on the database. A DBMS should provide capabilities for defining and enforcing the constraints.</li>
+    <li class="ml-12 mt-1">Inconsistency can be avoided : When the same data is duplicated and changes are made at one site, which is not propagated to the other site, it gives rise to inconsistency and the two entries regarding the same data will not agree. At such times the data is said to be inconsistent. So, if the redundancy is removed chances of having inconsistent data is also removed.</li>
+    <li class="ml-12 mt-1">Data can be shared : As explained earlier, the data about Name, Class, Father __name etc. of General_Office is shared by multiple applications in centralized DBMS as compared to file system so now applications can be developed to operate against the same stored data. The applications may be developed without having to create any new stored files.</li>
+    <li class="ml-12 mt-1">Standards can be enforced : Since DBMS is a central system, so standard can be enforced easily may be at Company level, Department level, National level or International level. The standardized data is very helpful during migration or interchanging of data. The file system is an independent system so standard cannot be easily enforced on multiple independent applications.</li>
+    <li class="ml-12 mt-1">Restricting unauthorized access : When multiple users share a database, it is likely that some users will not be authorized to access all information in the database. For example, account office data is often considered confidential, and hence only authorized persons are allowed to access such data. In addition, some users may be permitted only to retrieve data, whereas other are allowed both to retrieve and to update. Hence, the type of access operation retrieval or update must also be controlled. Typically, users or user groups are given account numbers protected by passwords, which they can use to gain access to the database. A DBMS should provide a security and authorization subsystem, which the DBA uses to create accounts and to specify account restrictions. The DBMS should then enforce these restrictions automatically.</li>
+    <li class="ml-12 mt-1">Solving Enterprise Requirement than Individual Requirement : Since many types of users with varying level of technical knowledge use a database, a DBMS should provide a variety of user interface. The overall requirements of the enterprise are more important than the individual user requirements. So, the DBA can structure the database system to provide an overall service that is “best for the enterprise”.</li>
+    <li class="ml-12 mt-1">Providing Backup and Recovery : A DBMS must provide facilities for recovering from hardware or software failures. The backup and recovery subsystem of the DBMS is responsible for recovery. For example, if the computer system fails in the middle of a complex update program, the recovery subsystem is responsible for making sure that the .database is restored to the state it was in before the program started executing.</li>
+    <li class="ml-12 mt-1">Cost of developing and maintaining system is lower : It is much easier to respond to unanticipated requests when data is centralized in a database than when it is stored in a conventional file system. Although the initial cost of setting up of a database can be large, but the cost of developing and maintaining application programs to be far lower than for similar service using conventional systems. The productivity of programmers can be higher in using non-procedural languages that have been developed with DBMS than using procedural languages.</li>
+    <li class="ml-12 mt-1">Data Model can be developed : The centralized system is able to represent the complex data and interfile relationships, which results better data modeling properties. The data madding properties of relational model is based on Entity and their Relationship, which is discussed in detail in chapter 4 of the book.</li>
+    <li class="ml-12 mt-1">Concurrency Control : DBMS systems provide mechanisms to provide concurrent access of data to multiple users.</li>
+    </p>
+    </div>
+    <div class="content6 flex-col justify-centre text-centre  border-2 rounded-2xl  lg:h-85 w-4/6 border-black  bg-neutral-200  my-6 py-4">
+    <h2 class=" ml-4 lg:ml-12 mt-1 font-bold">Disadvantages of DBMS :</h2>
+    <li class="ml-12 mt-3">Complexity : The provision of the functionality that is expected of a good DBMS makes the DBMS an extremely complex piece of software. Database designers, developers, database administrators and end-users must understand this functionality to take full advantage of it. Failure to understand the system can lead to bad design decisions, which can have serious consequences for an organization.</li>
+    <li class="ml-12 mt-1">Size : The complexity and breadth of functionality makes the DBMS an extremely large piece of software, occupying many megabytes of disk space and requiring substantial amounts of memory to run efficiently.</li>
+    <li class="ml-12 mt-1">Performance : Typically, a File Based system is written for a specific application, such as invoicing. As result, performance is generally very good. However, the DBMS is written to be more general, to cater for many applications rather than just one. The effect is that some applications may not run as fast as they used to.</li>
+    <li class="ml-12 mt-1">Higher impact of a failure : The centralization of resources increases the vulnerability of the system. Since all users and applications rely on the ~vailabi1ity of the DBMS, the failure of any component can bring operations to a halt.</li>
+    <li class="ml-12 mt-1">Cost of DBMS : The cost of DBMS varies significantly, depending on the environment and functionality provided. There is also the recurrent annual maintenance cost.</li>
+    <li class="ml-12 mt-1">Additional Hardware costs : The disk storage requirements for the DBMS and the database may necessitate the purchase of additional storage space. Furthermore, to achieve the required performance it may be necessary to purchase a larger machine, perhaps even a machine dedicated to running the DBMS. The procurement of additional hardware results in further expenditure.</li>
+    <li class="ml-12 mt-1">Cost of Conversion : In some situations, the cost oftlle DBMS and extra hardware may be insignificant compared with the cost of converting existing applications to run on the new DBMS and hardware. This cost also includes the cost of training staff to use these new systems and possibly the employment of specialist staff to help with conversion and running of the system. This cost is one of the main reasons why some organizations feel tied to their current systems and cannot switch to modern database technology.</li>
+    </div>
+    <div class="content7 flex-col justify-centre text-centre  border-2 rounded-2xl  lg:h-85 w-4/6 border-black  bg-neutral-200  my-6 py-4">
+        <h2 class=" ml-8 lg:ml-12 mt-1 font-bold">What to avoid ? When not to use a DBMS -</h2>
+        <ul>
+            <li class="ml-12 mt-3">In spite of the advantages of using a DBMS, there are a few situations in which such a system may involve unnecessary overhead costs, as that would not be incurred in traditional file processing. <br>
+                The overhead costs of using a DBMS are due to the following:
+                <br>
+                •  High initial investment in hardware, software, and training.
+                <br>
+                • Generality that a DBMS provides for defining and processing data.
+                <br>
+                • Overhead for providing security, concurrency control, recovery, and integrity functions.
+                <br>
+                Additional problems may arise, if the database designers and DBA do not properly design the database or if the database systems applications are not implemented properly.
+                
+                Hence, it may be more desirable to use regular files under the following circumstances:
+                <br>
+                • The database and applications are simple, well defined and not expected to change.
+                <br>
+                • There are tight real-time requirements for some programs that may not be met because of DBMS overhead.
+                <br>
+                • Multiple user access to data is not required.
+                <br>
+                • An application may need to manipulate the data in a way not supported by the query language.</li>
+            <li class="ml-12 mt-1"> <br> Requirement for a DBMS - 
+                The software responsible for the management data in computers i.e. DBMS (like Oracle, Foxpro, SQL Server etc.) should meet the following requirements:
+                <br>
+                1) Provide data definition facilities
+                2) Provide security of data
+                3) Provide concurrency control mechanism
+                4) Support Transactions
+                5) Provide facilities for database recovery
+                6) Master and transaction file
+            </li>
+        </ul>
+    </div>
+    <div class="content9 mt-4 flex justify-center items-center text-center w-64 sm:w-96">
+        <button type="button" class="my-14 py-2"><span></span><a href="htmlnotes.pdf">CLICK HERE TO DOWNLOAD THE
+                PDF</a></button>
+    </div>
